@@ -88,6 +88,7 @@ void __fastcall TForm1::TimerBallTimer(TObject *Sender)
     //loss
     if (ball->Left + ball->Width >= background->Width)
     {
+        sndPlaySound("snd/applause.wav",SND_ASYNC);
         TimerBall->Enabled = false;
         ball->Visible = false;
         player1Points++;
