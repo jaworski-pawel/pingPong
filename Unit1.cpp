@@ -226,6 +226,8 @@ void __fastcall TForm1::nextRoundClick(TObject *Sender)
     paddle2->Left = background->Width - 20 - paddle2->Width;
     ball->Left = background->Width/2;
     ball->Top = background->Height/2;
+    paddle1->Top = background->Height/2 - paddle1->Height/2;
+    paddle2->Top = background->Height/2 - paddle2->Height/2;
     TimerBall->Enabled = true;
     Form1->BorderStyle = bsDialog;
 }
